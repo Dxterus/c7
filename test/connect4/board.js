@@ -115,7 +115,7 @@ describe('connect 4', ()  => {
                 expect(board.lastPlayedSlot).to.equal(lastPlayed);
                 lastPlayed = board.play(0, ColourEnum.BLUE);
                 expect(board.lastPlayedSlot).to.equal(lastPlayed);
-                lastPlayed = board.play(0, ColourEnum.GREEN);
+                lastPlayed = board.play(0, ColourEnum.BLACK);
                 expect(board.lastPlayedSlot).to.equal(lastPlayed);
             });
 
