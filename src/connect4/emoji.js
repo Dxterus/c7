@@ -10,8 +10,8 @@ module.exports = {
         7: ':seven:',
         8: ':eight:',
         9: ':nine:',
-        10: ':ten',
-        11: ':eleven'
+        10: ':keycap_ten',
+        11: ':double_vertical_bar'
     },
     normal: {
         circle: {
