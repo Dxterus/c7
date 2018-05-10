@@ -18,7 +18,7 @@ module.exports = {
             red: ':red_circle:',
             blue: ':large_blue_circle:',
             black: ':black_circle',
-            white: ':white_circle:'
+            blank: ':white_circle:'
         },
         celebrate: ':tada:',
         fire: ':fire:',

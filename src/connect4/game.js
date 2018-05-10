@@ -87,9 +87,9 @@ class Game {
     }
 
     changePlayer() {
-        this.currentPlayer = this.currentPlayer = this.currentPlayer === this.playerOne
+        this.currentPlayer = this.currentPlayer == this.currentPlayer === this.playerOne
             ? this.playerTwo
-            : this.playerThree;
+            : this.PlayerOne;
             
 
     }
