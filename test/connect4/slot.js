@@ -72,14 +72,14 @@ describe('connect 4', ()  => {
                 expect(slot.colour).to.equal(ColourEnum.BLUE);
             });
 
-            it('should have the large_blue_circle emoji as its symbol when the player is green', () => {
-                slot.play(ColourEnum.GREEN);
-                expect(slot.symbol).to.equal(Emoji[GameTypeEnum.NORMAL].circle.green);
+            it('should have the large_blue_circle emoji as its symbol when the player is black', () => {
+                slot.play(ColourEnum.BLACK);
+                expect(slot.symbol).to.equal(Emoji[GameTypeEnum.NORMAL].circle.black);
             });
 
-            it('should have a colour of blue when the player is green', () => {
-                slot.play(ColourEnum.GREEN);
-                expect(slot.colour).to.equal(ColourEnum.GREEN);
+            it('should have a colour of blue when the player is black', () => {
+                slot.play(ColourEnum.BLACK);
+                expect(slot.colour).to.equal(ColourEnum.BLACK);
             });
         });
 
@@ -99,9 +99,9 @@ describe('connect 4', ()  => {
                 expect(slot.toString()).to.equal(Emoji[GameTypeEnum.NORMAL].circle.blue);
             });
 
-            it('should be the large_green_circle emoji when green is played', () => {
-                slot.play(ColourEnum.GREEN);
-                expect(slot.toString()).to.equal(Emoji[GameTypeEnum.NORMAL].circle.green);
+            it('should be the black_circle emoji when black is played', () => {
+                slot.play(ColourEnum.BLACK);
+                expect(slot.toString()).to.equal(Emoji[GameTypeEnum.NORMAL].circle.black);
             });
         });
     });

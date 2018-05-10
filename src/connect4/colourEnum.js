@@ -1,6 +1,6 @@
 module.exports = {
     RED: 'red',
     BLUE: 'blue',
-    GREEN: 'green',
+    BLACK: 'black',
     BLANK: 'white'
 };

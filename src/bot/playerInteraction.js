@@ -27,7 +27,7 @@ class PlayerInteraction {
 
                 let col = parseInt(e.text) - 1;
                 if (e.user !== player.id || isNaN(e.text)) {
-                    return true;
+                    return false;
                 } else if (!Board.validColumn(col)) {
                     channel.send(`${player.name}, please choose a valid column.`);
                     return false;
