@@ -69,7 +69,7 @@ class Bot {
                 this.isPolling = false;
                 let messagesInChannel = messages.where(e => e.channel === channel.id);
                 if (Math.random() >= 0.5) {
-                  players = players.reverse();
+                  players = players = players.reverse();
                 }
                 return this.startGame(messagesInChannel, channel, players);
             });
