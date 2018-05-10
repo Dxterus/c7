@@ -19,6 +19,7 @@ class Game {
 
         this.playerOne = new Player(players[0], ColourEnum.RED, this.gameType);
         this.playerTwo = new Player(players[1], ColourEnum.BLUE, this.gameType);
+        this.playerThree = new Player(players[2], ColourEnum.GREEN, this.gameType);
 
         this.gameEnded = new rx.Subject();
     }

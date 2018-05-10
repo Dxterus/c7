@@ -115,6 +115,8 @@ describe('connect 4', ()  => {
                 expect(board.lastPlayedSlot).to.equal(lastPlayed);
                 lastPlayed = board.play(0, ColourEnum.BLUE);
                 expect(board.lastPlayedSlot).to.equal(lastPlayed);
+                lastPlayed = board.play(0, ColourEnum.GREEN);
+                expect(board.lastPlayedSlot).to.equal(lastPlayed);
             });
 
             it('should return the slot just played', () => {
