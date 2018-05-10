@@ -72,7 +72,7 @@ describe('connect 4', ()  => {
                 expect(slot.colour).to.equal(ColourEnum.BLUE);
             });
 
-            it('should have the large_blue_circle emoji as its symbol when the player is black', () => {
+            it('should have the black_circle emoji as its symbol when the player is black', () => {
                 slot.play(ColourEnum.BLACK);
                 expect(slot.symbol).to.equal(Emoji[GameTypeEnum.NORMAL].circle.black);
             });
