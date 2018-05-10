@@ -19,7 +19,7 @@ describe('connect 4', ()  => {
         let slot;
 
         beforeEach(() => {
-            slot = new Slot(0, 1, GameTypeEnum.NORMAL);
+            slot = new Slot(0, 1, 2, GameTypeEnum.NORMAL);
         });
 
         describe('on initialisation', () => {
@@ -30,6 +30,10 @@ describe('connect 4', ()  => {
 
             it('should have the given col as its col', () => {
                 expect(slot.col).to.equal(1);
+            });
+
+            it('should have the given col as its col', () => {
+                expect(slot.col).to.equal(2);
             });
 
             it('should be empty', () => {
@@ -71,6 +75,16 @@ describe('connect 4', ()  => {
                 slot.play(ColourEnum.BLUE);
                 expect(slot.colour).to.equal(ColourEnum.BLUE);
             });
+
+            it('should have the large_blue_circle emoji as its symbol when the player is green', () => {
+                slot.play(ColourEnum.GREEN);
+                expect(slot.symbol).to.equal(Emoji[GameTypeEnum.NORMAL].circle.blue);
+            });
+
+            it('should have a colour of blue when the player is green', () => {
+                slot.play(ColourEnum.GREEN);
+                expect(slot.colour).to.equal(ColourEnum.BLUE);
+            });
         });
 
         describe('toString', () => {
@@ -87,6 +101,11 @@ describe('connect 4', ()  => {
             it('should be the large_blue_circle emoji when blue is played', () => {
                 slot.play(ColourEnum.BLUE);
                 expect(slot.toString()).to.equal(Emoji[GameTypeEnum.NORMAL].circle.blue);
+            });
+
+            it('should be the large_green_circle emoji when green is played', () => {
+                slot.play(ColourEnum.GREEN);
+                expect(slot.toString()).to.equal(Emoji[GameTypeEnum.NORMAL].circle.green);
             });
         });
     });

@@ -9,7 +9,7 @@ class BoardStringGenerator {
     }
 
     checkWon(counter) {
-        let winString = counter.symbol.repeat(6);
+        let winString = counter.symbol.repeat(4);
         let potentialWinString = this.genPotentialWinString(counter);
         return potentialWinString.includes(winString);
     }

@@ -77,16 +77,16 @@ class Bot {
 
     startGame(messages, channel, players) {
 
-        if (players.length < 2) {
+        if (players.length < 3) {
             channel.send('Not enough players for a game, try again later.');
             return rx.Observable.return(null);
         }
 
-        channel.send(`It is ${players[0].name} vs. ${players[1].name}. *Let the game begin!*`);
+        channel.send(`It is ${players[0].name} vs. ${players[1].name} vs. ${players[2].name}. *Let the game begin!*`);
 
         let game = new Connect4Game(this.slack, messages, channel, players, this.gameType);
         this.isGameRunning = true;
-        console.log(`A game has been started between ${players[0].name} and ${players[1].name}`);
+        console.log(`A game has been started between ${players[0].name} and ${players[1].name} and ${players[2].name}`);
 
         return rx.Observable
             .timer(0)
