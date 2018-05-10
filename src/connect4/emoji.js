@@ -11,14 +11,13 @@ module.exports = {
         8: ':eight:',
         9: ':nine:',
         10: ':keycap_ten',
-        11: ':double_verical_bar'
+        11: ':double_vertical_bar:'
     },
     normal: {
         circle: {
             red: ':red_circle:',
             blue: ':large_blue_circle:',
-            black: ':black_circle',
-            white: ':white_circle:'
+            black: ':black_circle'
         },
         celebrate: ':tada:',
         fire: ':fire:',
