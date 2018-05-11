@@ -11,7 +11,7 @@ module.exports = {
         8: ':eight:',
         9: ':nine:',
         10: ':keycap_ten:',
-        11: '[11]'
+        11: ':double-vertial-bar:'
     },
     normal: {
         circle: {
